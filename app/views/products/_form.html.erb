@@ -11,32 +11,32 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :money %>
-    <%= form.text_field :money %>
+    <%= form.text_field :money, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :currency %>
-    <%= form.number_field :currency %>
+    <%= form.number_field :currency, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :start_at %>
-    <%= form.time_select :start_at %>
+    <%= form.time_select :start_at, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :end_at %>
-    <%= form.time_select :end_at %>
+    <%= form.time_select :end_at, class: 'form-control' %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit 'submit', class: 'btn btn-primary' %>
   </div>
 <% end %>
